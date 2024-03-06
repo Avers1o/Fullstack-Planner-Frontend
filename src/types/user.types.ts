@@ -7,3 +7,5 @@ export interface IUser {
 	breakInterval?: number
 	intervalsCount?: number
 }
+
+export type TypeUserForm = Omit<IUser, 'id'> & { password?: string }
